@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+18.0.6
+/.angular/cache/18.0.6
+/.angular/cache/18.0.6/vite/deps
+/.angular/cache/18.0.6/vite
+vite
