@@ -1,0 +1,81 @@
+<!-- <style></style> -->
+
+<main class="main">
+  <div class="container-fliud">
+    <mat-toolbar class="navigation-bar">
+      <!-- 
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button> 
+      -->
+
+      <!-- Logo -->
+      <img src='assets/img/avatar/depositphotos_656507046-stock-illustration-health-logo-design-blue-gradient-removebg-preview.png' width="50"
+      height="45" alt="">
+
+
+
+      <span class="example-spacer"></span>
+
+      <!-- botones aqui -->
+      <div>
+        <button mat-button class="nav-button mat-button">
+          <mat-icon>home</mat-icon>Homepage
+        </button>
+      </div>
+
+      <div>
+        <button mat-button class="nav-button mat-button">
+          <mat-icon>attach_money</mat-icon>Prices
+        </button>
+      </div>
+
+      <div>
+        <button mat-button class="nav-button mat-button">
+          <mat-icon>chat</mat-icon>Blog
+        </button>
+      </div>
+
+      <div>
+        <button mat-button class="nav-button mat-button">
+          <mat-icon>phone</mat-icon>Contact
+        </button>
+      </div>
+
+      <span class="example-spacer"></span>
+
+      <div>
+        <button
+        mat-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+        class='nav-button mat-button'>
+        <mat-icon>person</mat-icon> User
+      </button>
+
+      </div>
+      
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>login</mat-icon>
+          <span>Login</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>assignment_ind</mat-icon>
+          <span>Sign in</span>
+        </button>
+      </mat-menu>
+
+      <!-- <button mat-icon-button class="nav-button">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="nav-button">
+        <mat-icon>share</mat-icon>
+      </button>
+      helllo?
+      -->
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </div>
+</main>
