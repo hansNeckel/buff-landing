@@ -1,0 +1,13 @@
+.navigation-bar {
+    background-color: black;
+    color: azure;
+    .nav-button{
+        color:azure;
+    }
+    .nav-button  :hover {
+        color: antiquewhite;
+    }
+    .example-spacer {
+        flex: 1 1 auto;
+    }
+}

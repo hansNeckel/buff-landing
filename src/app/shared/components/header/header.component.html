@@ -1,0 +1,106 @@
+
+<mat-toolbar class="navigation-bar navbar navbar-expand-md navbar-dark bg-dark col-sm-12">
+
+  <a href="">
+    <img
+    href=""
+    src="assets/img/avatar/depositphotos_656507046-stock-illustration-health-logo-design-blue-gradient-removebg-preview.png"
+    width="50"
+    height="45"
+  />
+  </a>
+ 
+
+  <span class="example-spacer"></span>
+
+  <div>
+    <button mat-button class="nav-button mat-button">
+      <mat-icon>home</mat-icon>Homepage
+    </button>
+  </div>
+
+  <div>
+    <button mat-button class="nav-button mat-button">
+      <mat-icon>attach_money</mat-icon>Prices
+    </button>
+  </div>
+
+  <div>
+    <button mat-button class="nav-button mat-button">
+      <mat-icon>chat</mat-icon>Blog
+    </button>
+  </div>
+
+  <div>
+    <button mat-button class="nav-button mat-button">
+      <mat-icon>phone</mat-icon>Contact
+    </button>
+  </div>
+
+  <span class="example-spacer"></span>
+
+  <div>
+    <button
+      mat-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+      class="nav-button mat-button"
+    >
+      <mat-icon>person</mat-icon> User
+    </button>
+  </div>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>login</mat-icon>
+      <span>Login</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>assignment_ind</mat-icon>
+      <span>Sign in</span>
+    </button>
+  </mat-menu>
+
+
+</mat-toolbar>
+
+
+
+<!-- 
+<mat-toolbar class="navigation-bar navbar navbar-expand-md navbar-dark bg-dark">
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Expand at sm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown03">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-md-0">
+        <input class="form-control" type="text" placeholder="Search">
+      </form>
+    </div>
+  </nav>
+
+
+  
+</mat-toolbar> -->
