@@ -1,13 +1,49 @@
 .navigation-bar {
-    background-color: black;
+  background-color: black;
+  color: azure;
+  justify-content: space-between;
+  .nav-button {
     color: azure;
-    .nav-button{
-        color:azure;
-    }
-    .nav-button  :hover {
-        color: antiquewhite;
-    }
-    .example-spacer {
-        flex: 1 1 auto;
-    }
+  }
+  .nav-button :hover {
+    color: antiquewhite;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
 }
+
+.btn-menu-collapse {
+  display: none;
+}
+
+
+.left-section {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .center-section {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .right-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+@media (max-width: 768px) {
+  .btn-menu-collapse {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+  }
+
+  .center-section {
+    display: none;
+  }
+}
+
