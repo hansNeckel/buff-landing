@@ -1,17 +1,26 @@
 .navigation-bar {
   background-color: black;
-  color: azure;
+  //color: azure;
   justify-content: space-between;
   .nav-button {
     color: azure;
-  }
-  .nav-button :hover {
-    color: antiquewhite;
   }
   .example-spacer {
     flex: 1 1 auto;
   }
 }
+
+.button-ex :hover{
+  background-color: azure;
+  color: black;
+  cursor: pointer;
+
+  .mat-icon{
+    //background-color: black;
+    //color: black;
+  }
+}
+
 
 .btn-menu-collapse {
   display: none;
@@ -40,6 +49,10 @@
     display: flex;
     justify-self: start;
     align-items: center;
+  }
+
+  .btn-menu-collapse:hover {
+    cursor: pointer;
   }
 
   .center-section {

@@ -1,0 +1,30 @@
+.headliner-card {
+  position: relative;
+  height: 34.5rem;
+}
+
+.headliner-main {
+  border-radius: 0px;
+  padding: 1rem;
+
+  background-color: black;
+}
+
+.card-header {
+    border-bottom: groove;
+    height: 5rem;
+}
+
+/* ex */
+/* 
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+} 
+*/
+
+.carrousel_container {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    width: 500px;
+}
