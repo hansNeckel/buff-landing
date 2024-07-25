@@ -10,18 +10,7 @@ import { MatButton } from '@angular/material/button';
   templateUrl: './headline.component.html',
   styleUrl: './headline.component.scss',
 })
-export class HeadlineComponent implements OnInit {
-  /* constructor() {
-    const myCarouselElement = document.querySelector('#headliner-carousel');
-
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 2000,
-      touch: false,
-    });
-  } */
-  ngOnInit(): void {
-    //this.headlinerCarousel = new headlinerCarousel();
-  }
-  //const carousel = new bootstrap.Carousel('#myCarousel')
+export class HeadlineComponent {
+  
 
 }
