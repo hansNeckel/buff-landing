@@ -3,19 +3,19 @@
     <div class="left-section align-left">
       <!-- Collapse menu on sm -->
       <mat-button class="btn-menu-collapse" [matMenuTriggerFor]="menuCollapse">
-        <mat-icon>menu</mat-icon>
+        <mat-icon class="menu-icon">menu</mat-icon>
       </mat-button>
 
-      <mat-menu #menuCollapse="matMenu">
-        <button mat-menu-item>Home</button>
-        <button mat-menu-item>Sobre nosotros</button>
-        <button mat-menu-item>Proyección</button>
-        <button mat-menu-item>Contacto</button>
+      <mat-menu #menuCollapse="matMenu" class="menu-collape">
+        <button mat-menu-item class="menu-item-1">Home</button>
+        <button mat-menu-item class="menu-item-2">Sobre nosotros</button>
+        <button mat-menu-item class="menu-item-3">Proyección</button>
+        <button mat-menu-item class="menu-item-4">Contacto</button>
       </mat-menu>
 
       <a href="">
-        <img href="" src="assets/img/avatar/logo.png" class="logo" />
-        <img href="" src="assets/img/avatar/logo-small.png" class="logo-small" />
+        <img draggable="false" href="" src="assets/img/avatar/logo.png" class="logo" />
+        <img draggable="false" href="" src="assets/img/avatar/logo-small.png" class="logo-small" />
       </a>
     </div>
 
@@ -57,15 +57,18 @@
         </button>
       </div>
 
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item class>
+      
+      <mat-menu #menu="matMenu" >
+        <button mat-menu-item class="menu-item-1">
           <mat-icon>login</mat-icon>
           <span>Login</span>
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item class="menu-item-2">
           <mat-icon>assignment_ind</mat-icon>
           <span>Sign in</span>
         </button>
       </mat-menu>
+      
+      
     </div>
 </mat-toolbar>
