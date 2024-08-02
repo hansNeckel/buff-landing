@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #3ed3fe 0%, #3ed3fe 100%);
+    color: #000;
+}
+
+.brand {
+    font-size: 34px; /* Ajusta el tamaño según sea necesario */
+    font-weight: bold;
+}
+
+.follow {
+    display: block;
+    margin-top: 10px;
+}
+
+#iconos {
+    display: flex;
+    gap: 10px; /* Ajusta el valor según la separación deseada */
+    margin-top: 10px;
+}
+
+#iconos a {
+    color: #000;
+    text-decoration: none;
+}
+
+#iconos a:hover {
+    color: #007bff;
+}
+
+#iconos i {
+    font-size: 24px;
+}
