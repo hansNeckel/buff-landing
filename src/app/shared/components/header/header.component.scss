@@ -1,15 +1,44 @@
 .navigation-bar {
   background-color: black;
-  color: azure;
+  //color: azure;
   justify-content: space-between;
+  font-family: "Montserrat";
   .nav-button {
     color: azure;
   }
-  .nav-button :hover {
-    color: antiquewhite;
-  }
   .example-spacer {
     flex: 1 1 auto;
+  }
+  .login-button {
+    background-color: #3ed2ff;
+    height: 36px;
+    color: black;
+    font-family: "Montserrat";
+  }
+
+  .login-button:hover {
+    box-shadow: 4px 4px 10px 0px #3ed2ff;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.logo-small {
+  display: none;
+}
+
+.button-ex :hover {
+  background-color: #3ed2ff;
+  color: black;
+  cursor: pointer;
+  height: 36px;
+
+  .mat-icon {
+    //background-color: black;
+    //color: black;
   }
 }
 
@@ -17,33 +46,92 @@
   display: none;
 }
 
-
 .left-section {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .center-section {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .right-section {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: flex-start;
+}
+.center-section {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.right-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   .btn-menu-collapse {
     display: flex;
     justify-self: start;
     align-items: center;
+    color: white;
+  }
+
+  .btn-menu-collapse:hover {
+    cursor: pointer;
+    .menu-icon {
+      //box-shadow: 1px 1px 1px 1px #3ED2FF;
+    }
   }
 
   .center-section {
     display: none;
   }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-small {
+    display: flex;
+    height: 50px;
+    width: 50px;
+  }
 }
 
+
+
+::ng-deep .mat-mdc-menu-panel {
+  background: black;
+  color: white;
+  //border: solid;
+  //border-width: 0.5px;
+  //border-radius: 4px;
+  //border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+  //border-color: #3ed2ff;
+
+  .mat-mdc-menu-content {
+    background: rgb(16, 16, 16);
+    color: white;
+    .mat-mdc-menu-item {
+      background-color: rgb(16, 16, 16);
+      color: white;
+    }
+
+    .menu-item-1:hover {
+      background: white;
+      color: black;
+    }
+
+    .menu-item-2:hover {
+      background: white;
+      color: black;
+    }
+
+    .menu-item-3:hover {
+      background: white;
+      color: black;
+    }
+
+    .menu-item-4:hover {
+      background: white;
+      color: black;
+    }
+  }
+
+
+}

@@ -43,3 +43,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 //bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf) format("trueType");
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,119 @@
+.headliner-card {
+  position: relative;
+  height: 34.5rem;
+}
+
+.headliner-main {
+  border-radius: 0px;
+  padding: 1rem;
+
+  background-color: black;
+}
+
+.card-header {
+  border-bottom: groove;
+  height: 5rem;
+}
+
+/* ex */
+/* 
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+} 
+*/
+
+/* .carrousel_container {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    width: 500px;
+} */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.title-container {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.subtitle-container {
+  color: #3ed2ff;
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.paragraph-container {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .button-suscribe {
+    color: black;
+    background: #3ed2ff;
+
+    width: 130px;
+    height: 36px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: var(--LabelMediumTracking);
+    text-align: center;
+  }
+  .button-suscribe:hover {
+    box-shadow: 4px 4px 10px 0px #3ed2ff;
+    border: 1px black;
+  }
+}
+
+.icons-container {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.icons-container-small {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .icons-container {
+    display: none;
+  }
+
+  .icons-container-small {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}

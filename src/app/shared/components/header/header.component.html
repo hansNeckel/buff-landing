@@ -1,47 +1,46 @@
 <mat-toolbar class="navigation-bar navbar navbar-expand-md navbar-dark  col-sm-12">
 
-  <!-- <div class="navbar-container"> -->
     <div class="left-section align-left">
       <!-- Collapse menu on sm -->
       <mat-button class="btn-menu-collapse" [matMenuTriggerFor]="menuCollapse">
-        <mat-icon>menu</mat-icon>
+        <mat-icon class="menu-icon">menu</mat-icon>
       </mat-button>
 
-      <mat-menu #menuCollapse="matMenu">
-        <button mat-menu-item>Homepage</button>
-        <button mat-menu-item>Prices</button>
-        <button mat-menu-item>Blog</button>
-        <button mat-menu-item>Contact</button>
+      <mat-menu #menuCollapse="matMenu" class="menu-collape">
+        <button mat-menu-item class="menu-item-1">Home</button>
+        <button mat-menu-item class="menu-item-2">Sobre nosotros</button>
+        <button mat-menu-item class="menu-item-3">Proyección</button>
+        <button mat-menu-item class="menu-item-4">Contacto</button>
       </mat-menu>
 
       <a href="">
-        <img href="" src="assets/img/avatar/logo.png" width="50" height="45" />
+        <img draggable="false" href="" src="assets/img/avatar/logo.png" class="logo" />
+        <img draggable="false" href="" src="assets/img/avatar/logo-small.png" class="logo-small" />
       </a>
-      <!-- logo -->
     </div>
 
     <div class="center-section align-center">
-      <div>
-        <button mat-button class="nav-button mat-button">
-          <mat-icon>home</mat-icon>Homepage
+      <div class="button-ex">
+        <button mat-button class="nav-button mat-button button-ex">
+          <!-- <mat-icon>home</mat-icon> -->Home
         </button>
       </div>
 
-      <div>
+      <div class="button-ex">
         <button mat-button class="nav-button mat-button">
-          <mat-icon>attach_money</mat-icon>Prices
+          <!-- <mat-icon>attach_money</mat-icon> -->Sobre nosotros
         </button>
       </div>
 
-      <div>
+      <div class="button-ex">
         <button mat-button class="nav-button mat-button">
-          <mat-icon>chat</mat-icon>Blog
+          <!-- <mat-icon>chat</mat-icon> -->Proyección
         </button>
       </div>
 
-      <div>
+      <div class="button-ex">
         <button mat-button class="nav-button mat-button">
-          <mat-icon>phone</mat-icon>Contact
+          <!-- <mat-icon>phone</mat-icon> -->Contacto
         </button>
       </div>
     </div>
@@ -52,23 +51,24 @@
           mat-button
           [matMenuTriggerFor]="menu"
           aria-label="Example icon-button with a menu"
-          class="nav-button mat-button"
+          class="nav-button mat-button login-button"
         >
-          <mat-icon>person</mat-icon> User
+          <!-- <mat-icon>person</mat-icon> --> Login
         </button>
       </div>
 
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
+      
+      <mat-menu #menu="matMenu" >
+        <button mat-menu-item class="menu-item-1">
           <mat-icon>login</mat-icon>
           <span>Login</span>
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item class="menu-item-2">
           <mat-icon>assignment_ind</mat-icon>
           <span>Sign in</span>
         </button>
       </mat-menu>
+      
+      
     </div>
-  <!-- </div> -->
-  <!-- <span class="example-spacer"></span> -->
 </mat-toolbar>
