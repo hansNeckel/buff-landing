@@ -22,4 +22,11 @@ import { MatMenuModule } from '@angular/material/menu';
   styleUrl: './header.component.scss',
   
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
