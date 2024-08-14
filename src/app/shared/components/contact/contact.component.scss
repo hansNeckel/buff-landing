@@ -1,0 +1,19 @@
+.headliner-main {
+    border-radius: 0px;
+    padding: 1rem;
+    background: linear-gradient(to bottom, black, #3ED2FF);
+}
+
+.btn-enviar{
+    width: 200px;
+    border-radius: 8px;
+    color: black !important;
+    background-color: #fff;
+    font-size: 18px !important;
+    font-family: 'Montserrat';
+}
+
+::ng-deep .mat-mdc-text-field-wrapper{
+    background-color: #fff;
+    border-radius: 8px !important;
+}
