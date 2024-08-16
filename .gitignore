@@ -136,3 +136,4 @@ vite
 
 # Angular cache
 .angular/cache/18.0.6/buff-landing/angular-compiler.db
+.angular/cache/
