@@ -6,7 +6,7 @@
 }
 
 .brand {
-    font-size: 34px; /* Ajusta el tamaño según sea necesario */
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -16,8 +16,8 @@
 }
 
 #iconos {
-    display: flex;
-    gap: 10px; /* Ajusta el valor según la separación deseada */
+    // display: flex;
+    gap: 15px;
     margin-top: 10px;
 }
 
@@ -32,4 +32,10 @@
 
 #iconos i {
     font-size: 24px;
+}
+
+.main {
+    border-radius: 0px;
+    padding: 1rem;
+    background-color: #3ED2FF;
 }
