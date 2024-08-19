@@ -106,15 +106,18 @@
 
 @media (max-width: 768px) {
   .icons-container {
-    display: none;
-  }
+    //display: none;
+  
 
-  .icons-container-small {
-    display: flex;
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
+    img {
+      max-width: 35px;
+      max-height: 50px;
+    }
   }
 }
