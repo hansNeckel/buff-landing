@@ -1,0 +1,77 @@
+.headliner-main {
+    border-radius: 0px;
+    padding: 1rem;
+    background-color: black;
+    padding-bottom: 3%; padding-top: 8%
+    
+}
+
+.contenedor-parrafo{
+    width: 750px;
+    height: 130px;
+    color: #fff; 
+    font-size: 21px;
+    line-height: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+
+
+.example-card {
+    max-width: 400px;
+}
+
+.mat-mdc-card-header{
+    padding-left: 15%;
+}
+
+.titulo-seguridad-tarjeta{
+    padding-left: 13%;
+}
+
+.titulo-valor-tarjeta{
+    padding-left: 25%;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    //width: 600px;
+    //height: 300px;
+}
+
+.content-outline {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: space-around;
+    flex-wrap: wrap; 
+}
+
+@media (max-width: 1500px) {
+    .img-container{
+        
+        img {
+            width: 300px;
+            height: 150px;
+            //padding: 1rem;
+        }
+    }
+
+    .contenedor-parrafo{
+        width: 500px;
+        height: 180px;
+        color: #fff;
+        font-size: 25px;
+        line-height: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: pre-wrap;
+    }
+
+}

@@ -18,7 +18,10 @@
   }
 
   .login-button:hover {
-    box-shadow: 4px 4px 10px 0px #3ed2ff;
+    //box-shadow: 4px 4px 10px 0px #3ed2ff;
+    border-style: solid;
+    color: #ffffff;
+    border-color: #ffffff;
   }
 }
 
@@ -37,10 +40,6 @@
   cursor: pointer;
   height: 36px;
 
-  .mat-icon {
-    //background-color: black;
-    //color: black;
-  }
 }
 
 .btn-menu-collapse {
@@ -74,9 +73,6 @@
 
   .btn-menu-collapse:hover {
     cursor: pointer;
-    .menu-icon {
-      //box-shadow: 1px 1px 1px 1px #3ED2FF;
-    }
   }
 
   .center-section {
