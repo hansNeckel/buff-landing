@@ -27,4 +27,16 @@ import { MatInputModule } from '@angular/material/input';
 })
 export class ContactComponent {
 
+  /* Funcionalidad para tomar datos en input */
+
+
+
+
+
+  /* funcionalidad para truncar datos?  */
+
+
+  /* funcionalidad que pase datos a un service.ts */ 
+
+  /* service.ts debe enviar datos como json usando apiRest */
 }
