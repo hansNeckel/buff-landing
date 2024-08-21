@@ -1,19 +1,32 @@
 .headliner-main {
     border-radius: 0px;
-    padding: 1rem;
+    //padding: 1rem;
     background-color: black;
-    padding-bottom: 3%; padding-top: 8%
+    padding-bottom: 5vw;
+    padding-top: 5vw;
     
 }
 
 .contenedor-parrafo{
-    width: 750px;
+    width: 650px;
     height: 130px;
     color: #fff; 
     font-size: 21px;
     line-height: normal;
     word-wrap: break-word;
     word-break: break-word;
+    text-align: left;
+}
+
+.contenedor-parrafo-1{
+    width: 650px;
+    height: 130px;
+    color: #fff;
+    font-size: 21px;
+    line-height: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: right;
 }
 
 
@@ -22,7 +35,7 @@
     max-width: 400px;
 }
 
-.mat-mdc-card-header{
+/* .mat-mdc-card-header{
     padding-left: 15%;
 }
 
@@ -32,7 +45,7 @@
 
 .titulo-valor-tarjeta{
     padding-left: 25%;
-}
+} */
 
 
 .img-container {
@@ -47,10 +60,12 @@
 
 .content-outline {
     display: flex;
+    gap: 40px;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
     align-items: stretch;
-    align-content: space-around;
-    flex-wrap: wrap; 
 }
 
 @media (max-width: 1500px) {
@@ -63,15 +78,107 @@
         }
     }
 
+    
+
     .contenedor-parrafo{
-        width: 500px;
-        height: 180px;
+        width: 402px;
+        height: 207px;
         color: #fff;
-        font-size: 25px;
+        font-size: 21px;
         line-height: normal;
         word-wrap: break-word;
         word-break: break-word;
-        white-space: pre-wrap;
+        //white-space: pre-wrap;
+        p {
+
+        }
     }
 
+    .contenedor-parrafo-1{
+        width: 402px;
+        height: 207px;
+        color: #fff;
+        font-size: 21px;
+        line-height: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+        //white-space: pre-wrap;
+        p {
+            
+        }
+    }
+
+}
+
+
+.title-proyeccion-outline {
+    padding-top: 5%; 
+    padding-bottom: 5%
+}
+
+
+
+.title-proyeccion-container{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    
+
+}
+
+.title{
+    font-size: 60px;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
+
+.card-icon {
+    color: #fff;
+    width: 8rem;
+    height: 8rem;
+    align-self: center;
+}
+
+.icon-cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+}
+
+.example-card{
+    /* color: #fff; */
+    width: 20rem;
+    height: 27rem;
+}
+
+
+mat-card-content {
+    display: block;
+    p {
+        padding-top: 1rem;
+        font-family: "Montserrat";
+        font-weight: bold;
+        text-align: left;
+        word-wrap: break-word;
+        /* white-space: pre-wrap; */
+        word-break: break-word;
+    }
+}
+
+
+.contenedor-titulo{
+    text-align: left;
+}
+
+.contenedor-titulo-1{
+    text-align: right;
+}
+
+
+.info-col{
+    column-width: 39em;
 }
