@@ -51,6 +51,9 @@
   line-height: 16px;
   letter-spacing: 0.5px;
   text-align: center;
+  /* text-align: center; */
+  /* width: 75rem; */
+  max-width: 88rem;
 }
 
 .button-container {
@@ -74,9 +77,8 @@
   }
   .button-suscribe:hover {
     //box-shadow: 1px 1px 1px 1px #ffffff;
-    border-style: solid;
+    outline:1px solid #ffffff;
     color: #ffffff;
-    border-color: #ffffff;
   }
 }
 
