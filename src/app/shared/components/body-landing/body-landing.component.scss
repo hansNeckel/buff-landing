@@ -54,6 +54,12 @@
   flex-wrap: nowrap;
   align-content: center;
   align-items: stretch;
+  img {
+    //border-color: solid #00cbcb;
+    //outline:1px solid #00cbcb;
+    border-radius: 3%;
+    box-shadow: 0px 1px 16px 5px #3ed2ff;
+  }
 }
 
 .content-outline {
@@ -101,8 +107,10 @@
 
 .example-card {
   /* color: #fff; */
+  /* width: 20rem; */
+  /*height: 27rem; */
   width: 20rem;
-  height: 27rem;
+  height: 30rem;
 }
 
 mat-card-content {
@@ -228,7 +236,9 @@ mat-card-content {
   .icon-cards-container {
     gap: 20px;
     .example-card {
-      height: 20rem;
+      
+      max-height: 24rem;
+      min-height: 24rem;
 
       mat-card-title {
         align-items: center;
