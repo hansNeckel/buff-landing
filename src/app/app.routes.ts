@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { LoginComponent } from './shared/components/login/login.component';
 
 //export const routes: Routes = [];
 
@@ -25,5 +26,6 @@ export const routes: Routes = [
     {
         path: '**',
         redirectTo: 'home'
-    }
+    },
+    { path: 'login', component: LoginComponent }
 ];
