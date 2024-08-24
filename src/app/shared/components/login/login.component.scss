@@ -1,0 +1,29 @@
+.headliner-main {
+    border-radius: 0px;
+    padding: 1rem;
+    background: linear-gradient(to bottom, black, #3ED2FF);
+    height: 100vh;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper{
+    background-color: #fff;
+    border-radius: 8px !important;
+}
+
+.button-suscribe {
+    color: black;
+    background: #3ed2ff;
+    border-radius: 8px;
+
+    width: 200px;
+    height: 36px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: var(--LabelMediumTracking);
+    text-align: center;
+  }
+  .button-suscribe:hover {
+    box-shadow: 4px 4px 10px 0px #3ed2ff;
+    border: 1px black;
+  }
