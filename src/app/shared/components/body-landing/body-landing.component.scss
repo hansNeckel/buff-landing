@@ -173,7 +173,7 @@ mat-card-content {
     }
   }
 
-  .contenedor-parrafo {
+  .contenedor-parrafo .contenedor-parrafo-1{
     width: 402px;
     height: 207px;
     color: #fff;
@@ -182,11 +182,13 @@ mat-card-content {
     word-wrap: break-word;
     word-break: break-word;
     //white-space: pre-wrap;
+    /* 
     p {
-    }
+    } 
+    */
   }
 
-  .contenedor-parrafo-1 {
+  /* .contenedor-parrafo-1 {
     width: 402px;
     height: 207px;
     color: #fff;
@@ -197,7 +199,7 @@ mat-card-content {
     //white-space: pre-wrap;
     p {
     }
-  }
+  } */
 }
 
 //small
@@ -286,7 +288,7 @@ mat-card-content {
     width: 315px;
     aspect-ratio: 1 / 0.7;
     border-radius: 8px;
-    cursor: pointer;
+    //cursor: pointer;
   h2 {
     font-size: smaller;
     font: 100;
