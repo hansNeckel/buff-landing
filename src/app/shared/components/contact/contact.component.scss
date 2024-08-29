@@ -1,19 +1,119 @@
 .headliner-main {
-    border-radius: 0px;
-    padding: 1rem;
-    background: linear-gradient(to bottom, black, #3ED2FF);
+  border-radius: 0px;
+  padding: 10rem 2rem 5rem 2rem;
+  background: linear-gradient(to bottom, black, #3ed2ff);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.btn-enviar{
-    width: 200px;
-    border-radius: 8px;
-    color: black !important;
-    background-color: #fff;
-    font-size: 18px !important;
-    font-family: 'Montserrat';
+::ng-deep .mat-mdc-text-field-wrapper {
+  background-color: #fff;
+  border-radius: 8.71px !important;
+
+  //border: 2.18px solid rgba(62, 210, 255, 1);
+  box-shadow: 0 0 0 3px rgba(62, 210, 255, 1);
 }
 
-::ng-deep .mat-mdc-text-field-wrapper{
-    background-color: #fff;
-    border-radius: 8px !important;
+
+::ng-deep .mdc-notched-outline { 
+    border:none;
+}
+/* ::ng-deep .mdc-text-field {
+  border-radius: 8.71px !important;
+} */
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  border-radius: 8.71px !important;
+}
+
+::ng-deep .mdc-text-field--outlined {
+    border:none;
+}
+
+.input {
+  width: 100%;
+  max-width: 30rem;
+  //margin-bottom: 1rem;
+
+  //flex: 1 0 30 rem;
+}
+
+.flex-container {
+  padding-top: 5rem;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+}
+
+.btn-enviar {
+  width: 200px;
+  border-radius: 8px;
+  color: black !important;
+  background-color: #fff;
+  font-size: 18px !important;
+  font-family: "Montserrat";
+  align-self: center;
+  //flex: 1 0 15rem
+}
+
+.button-container {
+  display: flex;
+}
+
+.text-container {
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  //gap: 80px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+    //gap: 12px;
+  }
+  .flex-container {
+    padding-top: 0rem;
+    gap: 10px;
+  }
+
+  .contact-container {
+    .row {
+      flex-direction: column-reverse;
+      .section-1 {
+        h3 {
+          padding: 1rem 0rem 2rem 0rem;
+          font-family: "Montserrat";
+          text-align: center;
+          font-size: 30px;
+        }
+      }
+      .section-2 {
+        h3 {
+          text-align: center;
+          font-size: 29px;
+          font-family: "Montserrat";
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+  .button-container {
+    padding-top: 1rem;
+  }
+
+  .text-container {
+  }
 }

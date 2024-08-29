@@ -136,4 +136,17 @@ vite
 
 # Angular cache
 .angular/cache/18.0.6/buff-landing/angular-compiler.db
+<<<<<<< HEAD
 .angular/cache/
+=======
+.angular/cache/18.2.0/buff-landing/angular-compiler.db
+.angular/cache/18.2.0/buff-landing/angular-compiler.db-lock
+.angular/
+
+#dist
+/dist/buff-landing
+/dist
+
+#firebase
+.firebase/
+>>>>>>> 98f935f695129a8fddae78dbe3757a42afdbbe2b
