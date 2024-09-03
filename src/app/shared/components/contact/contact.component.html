@@ -1,36 +1,95 @@
-<mat-card class="headliner-main" style="padding-bottom: 3%; padding-top: 10%;">
-    <div style="display: flex; justify-content: space-between; padding-left: 3%; padding-right: 3%; gap: 80px;">
-        <div id="contacto">
-            <h3 style="color: #fff;">Déjanos tus datos</h3>
-            <form>
-              <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 1rem;">
-                <mat-label>Nombre</mat-label>
-                <input matInput placeholder="Ingresa tu nombre">
-              </mat-form-field>
-              
-              <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 1rem;">
-                <mat-label>Correo</mat-label>
-                <input matInput placeholder="Ingresa tu correo" type="email">
-              </mat-form-field>
-              
-              <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 1rem;">
-                <mat-label>Teléfono</mat-label>
-                <input matInput placeholder="Ingresa tu teléfono" type="tel">
-              </mat-form-field>
-              
-              <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 1rem;">
-                <mat-label>Profesión</mat-label>
-                <input matInput placeholder="Ingresa tu profesión">
-              </mat-form-field>
-              
-              <div style="display: flex; justify-content: center; margin-top: 1rem;">
-                <button mat-raised-button color="primary" class="btn-enviar" type="submit">Enviar</button>
-              </div>
-            </form>
+<mat-card class="headliner-main">
+  <div class="contact-container">
+    <div id="contacto" class="row">
+      <form
+        class="col-sm-6 section-1"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <h3 style="color: #fff">Déjanos tus datos</h3>
+
+        <div class="flex-container">
+
+          <mat-form-field appearance="outline" class="input">
+            <input
+              matInput
+              placeholder="Ingresa tu nombre"
+              formControlName="name"
+            />
+            <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
+              El nombre es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="contactForm.get('name')?.hasError('pattern')">
+              El nombre solo puede contener letras y espacios.
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="input">
+            <input
+              matInput
+              placeholder="Ingresa tu correo"
+              type="email"
+              formControlName="email"
+            />
+            <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
+              El correo es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
+              El correo no tiene un formato válido.
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="input">
+            <input
+              matInput
+              placeholder="Ingresa tu teléfono"
+              type="tel"
+              formControlName="phone"
+            />
+            <mat-error *ngIf="contactForm.get('phone')?.hasError('required')">
+              El teléfono es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="contactForm.get('phone')?.hasError('pattern')">
+              El teléfono debe seguir el formato del código de país.
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="input">
+            <input
+              matInput
+              placeholder="Ingresa tu profesión"
+              formControlName="profession"
+            />
+            <mat-error
+              *ngIf="contactForm.get('profession')?.hasError('required')"
+            >
+              La profesión es obligatoria.
+            </mat-error>
+          </mat-form-field>
+
+          <div style="display: flex; justify-content: center; margin-top: 1rem">
+            <button
+              mat-raised-button
+              color="primary"
+              class="btn-enviar"
+              type="submit"
+            >
+              Enviar
+            </button>
           </div>
-          <div>
-            <h3 style="color: #fff;">¿Estas interesado en apoyarnos y/o en estar al tanto de los avances?</h3>
-            <p style="color: #fff;">Envíanos tus datos para mantener contacto y así irte informando acerca de los avances y funcionalidad de la plataforma, a la par se va desarrollando.</p>
-          </div>
+        </div>
+      </form>
+      <div class="text-container col-sm-6 section-2">
+        <h3 style="color: #fff">
+          ¿Estas interesado en apoyarnos y/o en estar al tanto de los avances?
+        </h3>
+        <p style="color: #fff">
+          Envíanos tus datos para mantener contacto y así irte informando acerca
+          de los avances y funcionalidad de la plataforma, a la par se va
+          desarrollando.
+        </p>
+      </div>
+      
     </div>
-  </mat-card>
+  </div>
+</mat-card>

@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { firebaseConfig } from '../config/firebase.config';
+import { getDatabase, ref, set } from 'firebase/database';
+import Swal from 'sweetalert2';
 
 //material imports
 
@@ -9,6 +14,8 @@ import { MatButton, MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CommonModule } from '@angular/common';
 import {MatMenuModule} from '@angular/material/menu';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @Component({
