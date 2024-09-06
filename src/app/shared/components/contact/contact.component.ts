@@ -15,6 +15,7 @@ import Swal from 'sweetalert2';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { serverTimestamp } from 'firebase/firestore';
+import {MatSelectModule} from '@angular/material/select';
 
 @Component({
   selector: 'app-contact',
@@ -30,7 +31,8 @@ import { serverTimestamp } from 'firebase/firestore';
     MatCardModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
@@ -39,6 +41,7 @@ export class ContactComponent {
   private db;
   contactData = { name: '', email: '', phone: '', profession: '' };
   contactForm: FormGroup;
+  profesiones: string[] = ['Enfermería','Kinesiología','Nutricionista','Preparador Físico', 'Medicina'];
 
   constructor(private fb: FormBuilder) {
     const app = initializeApp(firebaseConfig);
@@ -101,5 +104,12 @@ export class ContactComponent {
         }
       });
     }
+  }
+
+
+
+  
+  addProfesion(value: string){
+    this.profesiones.push(value);
   }
 }

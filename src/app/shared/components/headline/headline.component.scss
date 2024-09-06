@@ -27,10 +27,13 @@
   color: white;
   font-family: "Montserrat";
   font-size: 72px;
-  font-weight: 700;
+  
   line-height: 16px;
   letter-spacing: 0.5px;
   text-align: center;
+  h1 {
+    font-family: "Montserrat";
+  }
 }
 
 .subtitle-container {
@@ -41,6 +44,9 @@
   line-height: 16px;
   letter-spacing: 0.5px;
   text-align: center;
+  h2 {
+    font-family: "Montserrat";
+  }
 }
 
 .paragraph-container {
@@ -54,6 +60,9 @@
   /* text-align: center; */
   /* width: 75rem; */
   max-width: 88rem;
+  h3 {
+    font-family: "Montserrat";
+  }
 }
 
 .button-container {

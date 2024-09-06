@@ -53,12 +53,35 @@
               El teléfono debe seguir el formato del código de país.
             </mat-error>
           </mat-form-field>
-
+<!-- 
           <mat-form-field appearance="outline" class="input">
             <input
               matInput
               placeholder="Ingresa tu profesión"
               formControlName="profession"
+            />
+            <mat-error
+              *ngIf="contactForm.get('profession')?.hasError('required')"
+            >
+              La profesión es obligatoria.
+            </mat-error>
+          </mat-form-field>
+ -->
+
+
+          <mat-form-field appearance="outline" class="input">
+            <mat-select #profesion>
+              <mat-option *ngFor="let profesion of profesiones">
+                {{profesion}}
+              </mat-option>
+            </mat-select>
+
+
+            <input
+              matInput
+              placeholder="Ingresa tu profesión"
+              formControlName="profession"
+              #profesion
             />
             <mat-error
               *ngIf="contactForm.get('profession')?.hasError('required')"
