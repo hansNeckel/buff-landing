@@ -1,31 +1,73 @@
 <mat-card class="headliner-main">
   <div class="contact-container">
     <div id="contacto" class="row">
-      
-      <form class="col-sm-6 section-1">
+      <form
+        class="col-sm-6 section-1"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+      >
         <h3 style="color: #fff">Déjanos tus datos</h3>
+
         <div class="flex-container">
+
           <mat-form-field appearance="outline" class="input">
-            <!-- <mat-label>Nombre</mat-label> -->
-            <input matInput placeholder="Nombre" />
+            <input
+              matInput
+              placeholder="Ingresa tu nombre"
+              formControlName="name"
+            />
+            <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
+              El nombre es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="contactForm.get('name')?.hasError('pattern')">
+              El nombre solo puede contener letras y espacios.
+            </mat-error>
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="input">
-            <!-- <mat-label>Correo</mat-label> -->
-            <input matInput placeholder="Correo" type="email" />
+            <input
+              matInput
+              placeholder="Ingresa tu correo"
+              type="email"
+              formControlName="email"
+            />
+            <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
+              El correo es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
+              El correo no tiene un formato válido.
+            </mat-error>
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="input">
-            <!-- <mat-label>Teléfono</mat-label> -->
-            <input matInput placeholder="Teléfono" type="tel" />
+            <input
+              matInput
+              placeholder="Ingresa tu teléfono +569XXXXXXXX"
+              type="tel"
+              formControlName="phone"
+            />
+            <mat-error *ngIf="contactForm.get('phone')?.hasError('required')">
+              El teléfono es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="contactForm.get('phone')?.hasError('pattern')">
+              El teléfono debe seguir el formato del código de país.
+            </mat-error>
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="input">
-            <!-- <mat-label>Profesión</mat-label> -->
-            <input matInput placeholder="Profesión" />
+            <input
+              matInput
+              placeholder="Ingresa tu profesión"
+              formControlName="profession"
+            />
+            <mat-error
+              *ngIf="contactForm.get('profession')?.hasError('required')"
+            >
+              La profesión es obligatoria.
+            </mat-error>
           </mat-form-field>
 
-          <div class="button-container">
+          <div style="display: flex; justify-content: center; margin-top: 1rem">
             <button
               mat-raised-button
               color="primary"
@@ -35,11 +77,8 @@
               Enviar
             </button>
           </div>
-
-
         </div>
       </form>
-
       <div class="text-container col-sm-6 section-2">
         <h3 style="color: #fff">
           ¿Estas interesado en apoyarnos y/o en estar al tanto de los avances?

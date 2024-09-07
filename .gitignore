@@ -136,6 +136,8 @@ vite
 
 # Angular cache
 .angular/cache/18.0.6/buff-landing/angular-compiler.db
+.angular/cache/
+=======
 .angular/cache/18.2.0/buff-landing/angular-compiler.db
 .angular/cache/18.2.0/buff-landing/angular-compiler.db-lock
 .angular/

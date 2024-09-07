@@ -10,6 +10,11 @@
   padding: 5vw 1rem 5vw 1rem;
 }
 
+.container-titulo-por-que-elegirnos{
+  display: flex;
+  justify-content: center;
+}
+
 .contenedor-parrafo {
   width: 650px;
   height: 130px;
@@ -89,6 +94,7 @@
   font-size: 60px;
   font-family: "Montserrat";
   font-weight: normal;
+  color: white;
 }
 
 .card-icon {
@@ -96,6 +102,55 @@
   width: 8rem;
   height: 8rem;
   align-self: center;
+}
+
+.imagen-phone-computer{
+  width: 60%;
+}
+
+.container-text-computer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.titulo-atenciones-comodas{
+  background: linear-gradient(to right, #3ED2FF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.iconos-amenities{
+  width: 30px;
+  height: 30px;
+}
+
+.texto-atenciones{
+  max-width: 50%;
+}
+
+.imagenes-phone-computer{
+  max-width: 50%;
+}
+
+.container-aminities{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-items, .right-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-items > div, .right-items > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
 .icon-cards-container {
