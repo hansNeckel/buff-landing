@@ -14,6 +14,7 @@ import { getDatabase, ref, set } from 'firebase/database';
 import Swal from 'sweetalert2';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { serverTimestamp } from 'firebase/firestore';
 
 @Component({
   selector: 'app-contact',
@@ -56,11 +57,11 @@ export class ContactComponent {
     if (this.contactForm.valid) {
       try {
         const contactData = this.contactForm.value;
+        contactData.timestamp = serverTimestamp();
         const docRef = await addDoc(collection(this.db, 'contacts'), contactData);
 
         Swal.fire({
-          title: '¡Mensaje enviado!',
-          text: 'Tu mensaje ha sido enviado con éxito.',
+          title: '¡Datos enviados!',
           icon: 'success',
           confirmButtonText: 'Aceptar',
           showClass: {
@@ -88,7 +89,7 @@ export class ContactComponent {
       }
     } else {
       Swal.fire({
-        title: 'Formulario inválido',
+        title: 'Datos no enviados',
         text: 'Por favor, completa el formulario correctamente.',
         icon: 'warning',
         confirmButtonText: 'Aceptar',
