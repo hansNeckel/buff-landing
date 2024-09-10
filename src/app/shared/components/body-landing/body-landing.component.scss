@@ -41,6 +41,17 @@
   max-width: 400px;
 }
 
+
+.container-elegirnos {
+  max-width: 103rem;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
 /* .mat-mdc-card-header{
     padding-left: 15%;
 }
@@ -218,6 +229,10 @@ mat-card-content {
   display: none;
 }
 
+.container-elegirnos-mobile {
+  display: none;
+}
+
 //mid
 @media (max-width: 1500px) {
   .img-container {
@@ -322,6 +337,38 @@ mat-card-content {
   .grid-container-mobile {
     display: contents;
   }
+
+  .container-elegirnos {
+    display: none;
+  }
+
+
+
+  .container-elegirnos-mobile {
+    display: contents;
+    .imagen-phone-computer {
+      color:#3ED2FF;
+    }
+    .title{
+      font-size: 35px;
+      font-family: "Montserrat";
+      font-weight: lighter;
+      color: white;
+      text-align: center;
+    }
+    .container-aminities{
+      display: flex;
+      padding: 15px;
+    }
+    .container-text-computer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: stretch;
+    }
+  }
+
+
 }
 
 
@@ -333,6 +380,8 @@ mat-card-content {
     gap: 50px;
     justify-content: center;
     flex-wrap: nowrap;
+    align-self: center;
+
 }
 
 //testing
